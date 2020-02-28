@@ -1,4 +1,4 @@
-@font-face {
+@font-face { 
 	font-family: 'Dancing Script';
 	src: url('Dancing Script');
 }
@@ -8,7 +8,6 @@ body{
 } 
 #cabecera{
 	background-color: #5b7989;
-	text-align: left;
 	color: white;
 	text-shadow: 2px 2px 2px #02010a;
 	border-radius: 10px 10px 0px 0px;
@@ -17,10 +16,7 @@ body{
 .contenedor{
 	width: 100%;
 }
-#menu{
-	word-spacing: 1em;
-	
-}
+
 #imagenes{
 	text-align: center;
 }
@@ -71,30 +67,42 @@ body{
 
 header{
 	padding-left: 2%;
-	padding-top: 1%;
+	/*padding-top: 2%;*/
 }
-nav div{
-	padding-left: 2%;
-}
+
 @media (min-width: 900px){/*pc*/
 	.contenedor{
 		width: 900px;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	#cabecera, #menu{
+	#cabecera{
 		width: 100%;
+	}
+	#imagenes{
+		display: flex;
+		flex-flow: row wrap;
 	}
 
 	#images2, #images3{
-	width: 50%;
+		width: 50%;
+	}
 	
-}
+	li{
+		display: inline;
+		margin: 0px 15px;
+	  
+	}
+	header{
+		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+	}
 	
 }
 
 @media (max-width: 900px){/*movil*/
-	#cabecera, #menu{
+	#cabecera{
 		width: 100%;
 		text-align: center;
 	}
@@ -106,5 +114,18 @@ nav div{
 	#images3{
 		width: 100%;
 		background-color: #d5c75f;
+	}
+
+	li{
+	  display: inline;
+	  margin: 0px 15px;
+	  
+	}
+	ul{
+		padding: 0%;
+	}
+	header{
+	
+	padding-top: 1%;
 	}
 }
