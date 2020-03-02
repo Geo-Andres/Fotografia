@@ -5,9 +5,6 @@
 body{
 	font-family: 'Dancing Script';
 	background-color: #02010a;	
-} 
-img{
-	filter: drop-shadow(2px 2px 0px #02010a);
 }
 /*enlaces*/
 a:visited {
@@ -25,58 +22,25 @@ nav{
 	text-shadow: 2px 2px 2px #02010a;
 	border-radius: 10px 10px 0px 0px;
 } 
-.contenedor{
+.contenido{
 	width: 100%;
 }
-
-#imagenes{
-	text-align: center;
-}
-#images1{
-	background-color: #82c3a6;
-	width: 100%;
-}
-#images2{
-	
+/* imagenes*/
+#galeria{
 	background-color: #d5c75f;
-	float: left;
-	padding-top: 2%;
-	padding-bottom: 2%;
 }
-#images3{
-	
-	background-color: #d5c75f;
-	float: left;
-	padding-top: 2%;
-	padding-bottom: 2%;
+#img1{
+	filter: blur(10px) drop-shadow(2px 2px 0px #02010a);
 }
-#img11{
-	width: 80%;
-	margin-top: 2%;
-	margin-bottom: 2%;
+#img_par{
+	filter: grayscale(100%) drop-shadow(2px 2px 0px #02010a);	
 }
-#img22{
-	width: 80%;
-	transition-property: transform, filter, border;
-	transition-duration: 2s;
+#img3{
+	filter: sepia(90%) drop-shadow(2px 2px 0px #02010a);
 }
-#img22:hover{
-	transform: rotate(10deg);
-	filter: drop-shadow(5px 5px 5px #82c3a6);
-	border: 2px solid black;
+#img5{
+	filter: drop-shadow(2px 2px 0px #02010a);
 }
-#img33{
-	width: 80%;
-	border: 1px solid black;
-	transition-property: transform, filter, border;
-	transition-duration: 1s;
-}
-#img33:hover{
-	transform: translate(20px, -5px);
-	filter: drop-shadow(5px 5px 5px #82c3a6);
-	border: 2px solid black;
-}
-
 .pie
 {
 	background-color: #C6d5c5;
@@ -100,14 +64,7 @@ nav{
 	#cabecera{
 		width: 100%;
 	}
-	#imagenes{
-		display: flex;
-		flex-flow: row wrap;
-	}
-
-	#images2, #images3{
-		width: 50%;
-	}
+	
 	
 	li{
 		display: inline;
@@ -119,6 +76,19 @@ nav{
   		justify-content: space-between;
   		align-items: center;
   		padding-left: 2%;
+	}
+	#galeria{
+		display: flex;
+		flex-flow: row wrap;
+		
+	}
+	#image{
+		width: 29%;
+		padding: 2%;
+		text-align: center;
+	}
+	#image img{
+		width: 90%;
 	}
 	.pie{
 		display: flex;
@@ -138,10 +108,7 @@ nav{
 		width: 100%;
 		text-align: center;
 	}
-	#imagenes{
-		display: flex;
-		flex-direction: column;
-	}
+	
 
 	li{
 	  display: inline;
@@ -154,6 +121,20 @@ nav{
 	header{
 		padding-top: 1%;
 		padding-bottom: 2%
+	}
+	#galeria{
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 8%;
+		padding-top: 8%;
+	}
+	#image{
+		width: 96%;
+		padding: 2%;
+		text-align: center;
+	}
+	#image img{
+		width: 80%;
 	}
 	.pie{
 		display: flex;
