@@ -9,15 +9,39 @@ body{
 img{
 	filter: drop-shadow(2px 2px 0px #02010a);
 }
+@-webkit-keyframes header_anima {
+	0% {
+		margin-top: 150%;		
+	}
+	60% {
+		margin-top: -5%;	
+	}
+	100% {
+		margin-top: 0%;	
+	}
+}
+header{
+	animation-name: header_anima;
+	animation-duration: 1s;
+}
 /*enlaces*/
-a:visited {
+nav a{
+	color: white;
+}
+a:visited{
 	text-decoration: none;
 }
-a{
-	color: white;
+a[href^='ind']
+{
+	text-decoration: none;
 }
 nav{
 	font-weight: bold;
+}
+section div a{
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
 }
 #cabecera{
 	background-color: #5b7989;
@@ -31,6 +55,8 @@ nav{
 
 #imagenes{
 	text-align: center;
+	background-color: #d5c75f;
+	border: 1px solid;
 }
 #images1{
 	background-color: #82c3a6;
@@ -38,14 +64,12 @@ nav{
 }
 #images2{
 	
-	background-color: #d5c75f;
 	float: left;
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
 #images3{
 	
-	background-color: #d5c75f;
 	float: left;
 	padding-top: 2%;
 	padding-bottom: 2%;

@@ -28,7 +28,7 @@ a{
 a:visited{
 	text-decoration: none;
 }
-a[href^='Pais']
+a[href^='Ret']
 {
 	text-decoration: none;
 }
